@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url("background.jpg");
+    height: 110vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px,100vw);
+    ;
+}
+.main .box{
+    height: 110vh;
+    width: 100%;
+    opacity: 0.74;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 77vw;
+    margin: auto;
+    height: 62px;
+    box-sizing: border-box;
+}
+nav img{
+    position: relative;
+    z-index: 10;
+    color: red;
+    width: 150px;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+}
+.hero{
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+.hero> :nth-child(1){
+    font-weight: 900;
+    font-size: 48px;
+}
+.hero>:nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+}
+.hero :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px;
+}
+.hero :nth-child(4){
+    height: 10px;
+}
+.seperation{
+    height: 11px;
+    background-color: gray;
+    opacity: 0.35;
+    z-index: 20;
+    position: relative;
+}
+.btn{
+    padding: 3px 8px;
+    font-weight: bold;
+    background-color: white;
+}
+.btnred{
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+}
+.btnredsmall{
+    background-color: red;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid red;
+    cursor: pointer;
+}
+.btnblacksmall{
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    cursor: pointer;
+
+}
+input{
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 15px 90px 15px 10px;
+    background-color: transparent;
+    justify-content:start;
+    align-items:start;
+    gap: 10px;
+    border: 1px solid white;
+    color: white;
+}
+.inputtag{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.first{
+    display: flex;
+    justify-content: center;
+    max-width: 90vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+}
+.secImag{
+    position: relative;
+}
+.secImg img{
+    width: 400px;
+}
+.secImag video{
+    position: absolute;
+    top: 95px;
+    right: 85px;
+    width: 400px;
+}
+.section>first{
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    font-size: 48px;
+    font-weight: bolder;
+}
+.description{
+    font-size: 24px;
+}
+@media screen and (max-width:500px){
+    .first{
+        flex-wrap: wrap;
+    }
+    .secImag img{
+        width: 305px;
+    }
+    .secImg video{
+        width:305px;
+    }
+}
+.faq{
+    color: white;
+    background-color: black;
+    padding: 30px;
+}
+.faq h2{
+    text-align: center;
+    padding: 10px;
+}
+.faqbox{
+    display: flex;
+    background-color: #2d2d2d;
+    padding: 10px;
+    max-width: 70vw;
+    margin: auto;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.faqbox:hover{
+    cursor: pointer;
+    background-color: #414141;
+}
+footer{
+    color: white;
+    max-width: 80vw;
+    margin: auto;
+    padding: 20px;
+}
+footer a{
+    font-size: 14px;
+    color: white;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.questions{
+    padding: 15px 0;
+}
+@media screen and (max-width:500px){
+    .footer{
+        gap: 25px;
+    }
+    .hero> :nth-child(1){
+        font-size: 32px;
+    }
+    .hero> :nth-child(2){
+        font-size: 18px;
+    }
+    .hero> :nth-child(3){
+        font-size: 18px;
+    }
+    nav{
+        max-width: 90vw;
+    }
+    .inputtag{
+        padding: 30px;
+        flex-direction: column;
+    }
+}
